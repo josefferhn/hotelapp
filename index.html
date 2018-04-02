@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grand Hotel App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/framework7.min.css" rel="stylesheet">
+<link href="css/material-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">	
+</head>
+
+<body class="color-theme-black">
+<div id="app">
+
+    <div class="statusbar"></div>
+    <div class="panel panel-left panel-reveal">
+    	<div class="bg-panel">
+			<div class="block-title text-align-center block-strong logo-panel">
+				<img src="img/logo.png" class="img-responsive" width="100">
+			</div>
+		</div>
+		<div class="block-strong-inset">
+			<div class="list no-margin-top">
+				<ul>
+					<li>
+						<a href="/about/" class="item-link item-content panel-close">
+							<div class="item-media">
+								<i class="material-icons">info</i>
+							</div>
+							<div class="item-inner">
+								Información del Hotel
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="item-link item-content panel-close">
+							<div class="item-media">
+								<i class="material-icons">notifications</i>
+							</div>
+							<div class="item-inner">
+								Servicios del Hotel
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="item-link item-content panel-close">
+							<div class="item-media">
+								<i class="material-icons">lens</i>
+							</div>
+							<div class="item-inner">
+								Restaurantes y Bares
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="item-link item-content panel-close">
+							<div class="item-media">
+								<i class="material-icons">local_offer</i>
+							</div>
+							<div class="item-inner">
+								Ofertas Especiales
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="item-link item-content panel-close">
+							<div class="item-media">
+								<i class="material-icons">developer_mode</i>
+							</div>
+							<div class="item-inner">
+								Acerca de la Aplicación
+							</div>
+						</a>
+					</li>
+				</ul>
+			
+			</div>
+			
+		</div>
+
+    </div>
+
+    <div class="view view-main view-init">
+		<div class="page" >
+			<div class="navbar">
+			  <div class="navbar-inner">
+				<div class="title">Grand Hotel</div>
+				<div class="right">
+				  <a href="#" class="link icon-only panel-open" data-panel="left"><i class="icon material-icons md-only">menu</i></a>
+				</div>
+			  </div>
+			</div>
+			
+			<section id="home" class="page-content">
+				<div class="block">
+					<div class="block-title text-align-center">
+						
+					</div>
+				</div>
+				<div class="block">
+				<div class="row">
+				
+					<article class="col-50">
+						<a href="#" class="link icon-only">
+							<div class="icon">
+								<i class="material-icons">room_service</i>
+								<span>Habitaciones</span>
+							</div>
+						</a>				
+					</article>
+					
+					<article class="col-50">
+						<a href="#" class="link icon-only">
+							<div class="icon">
+								<i class="material-icons">local_bar</i>
+								<span>Bares</span>
+							</div>
+						</a>					
+					</article>
+					
+				</div>
+				</div>
+			</section>
+
+		</div><!-- page -->
+		
+		<div class="toolbar tabbar-labels toolbar-bottom-md">
+			<div class="toolbar-inner">
+			  <a href="#" class="tab-link">         
+				<i class="icon material-icons md-only">home</i>
+				<span class="tabbar-label">Inicio</span>
+			  </a>
+			  <a href="#" class="tab-link">
+				<i class="icon material-icons md-only">view_list</i>
+				<span class="tabbar-label">Rooms</span>
+			  </a>
+			  <a href="#" class="tab-link">
+				<i class="icon material-icons md-only">settings</i>
+				<span class="tabbar-label">Settings</span>
+			  </a>
+			</div>
+      	</div>
+	</div><!-- view -->
+
+  
+<section id="popup-login" class="popup modal-in">
+<div class="page no-navbar no-toolbar no-swipeback">
+    <div class="page-content login-screen-content">
+    <div class="login-screen-title">
+    	<img src="img/logo.png" class="img-responsive">
+    </div>
+    <form id="form-login">
+      <div class="list">
+        <ul>
+          <li class="item-content item-input">
+           
+            <div class="item-inner">
+              <div class="item-title item-label">Username</div>
+              <div class="item-input-wrap">
+                <input type="text" id="username" name="username" placeholder="Your username" required validate>
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Password</div>
+              <div class="item-input-wrap">
+                <input type="password" id="password" name="password" placeholder="Your password" required validate>
+              </div>
+            </div>
+          </li>
+          <!--<li class="item-content">
+			<div class="item-inner">
+				<div class="item-title item-label">Recordarme</div>
+				<div class="item-after">
+					<label class="toggle toggle-init">
+					<input name="recordarme" value="yes" type="checkbox"><i class="toggle-icon"></i>
+					</label>
+				</div>
+			</div>
+		  </li>-->
+        </ul>
+      </div>
+      <div class="list block">
+       
+        <ul>
+          <li><a href="#" id="btn-login" class="item-link button button-fill button-round text-color-white">Sign In</a></li>
+        </ul>
+        <div class="block-footer">
+          <p><a href="#" class="link popup-open" data-popup=".popup-register">Register</a></p>
+          <!--<p><a href="#" class="close-login-screen">Register</a></p>-->
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</section>
+      
+<section id="popup-register" class="popup popup-register">
+<div class="page no-navbar no-toolbar no-swipeback">
+    <div class="page-content login-screen-content">
+    <div class="login-screen-title">
+    	<img src="img/logo.png" class="img-responsive">
+    </div>
+    <div class="login-screen-title">
+		REGISTER
+    </div>
+    <form id="form-register">
+      <div class="list">
+        <ul>
+         <li class="item-content item-input">
+           
+            <div class="item-inner">
+              <div class="item-title item-label">Email</div>
+              <div class="item-input-wrap">
+                <input type="email" id="email" name="email" placeholder="Your email" required validate>
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+           
+            <div class="item-inner">
+              <div class="item-title item-label">Username</div>
+              <div class="item-input-wrap">
+                <input type="text" id="username" name="username" placeholder="Your username" required validate>
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Password</div>
+              <div class="item-input-wrap">
+                <input type="password" id="password" name="password" placeholder="Your password" required validate>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+      <div class="list block">
+       
+        <ul>
+          <li><a href="#" id="btn-register" class="item-link button button-fill button-round text-color-white">Register</a></li>
+        </ul>
+        <div class="block-footer">
+          <p><a href="#" class="btn-close-register">Cancel</a></p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</section>
+
+
+</div><!-- #app -->
+	
+
+<script src="js/framework7.min.js"></script>
+<script src="js/my-app.js"></script>
+</body>
+</html>

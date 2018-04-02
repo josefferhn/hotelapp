@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.img-responsive{
+	max-width: 100%;
+	height: auto;
+}
+.navbar {
+    /*background: #333;
+     We can add transition for smooth color animation */
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+ 
+/* Change Status bar background when panel opened */
+body.with-panel-left-reveal .navbar {
+    background: #222;
+} 
+.hidden{
+	display: none;
+}
+.panel-left{
+	background-color: #212121;
+	color: #BBBBBB;
+}
+.panel-left .list{
+	font-size: 14px;
+}
+.panel-left .list .material-icons{
+	color: #857043;
+}
+.bg-panel{
+	margin: 0;
+}
+.bg-panel ul{
+	list-style: none;
+}
+.panel .list-block .item-inner::after{
+	border-bottom: 0;
+}
+.panel-left .list .item-link .item-inner {
+  background:none;
+}
+
+.toolbar .tabbar-label {
+    display: block;
+}
+.logo-panel{
+	margin: 0 !important;
+}
+.swiper-container {
+	 width: 100%;
+     height: auto;
+ }
+.swiper-slide {
+  background: #fff;
+}
+.swiper-slide span {
+  text-align:center;
+  display:block;
+  margin: 20px;
+  font-size:21px;
+}
+
+
+p,h4,h5{
+	margin: 2px 0px;
+}
+
+#home .link{
+	display: block;
+}
+#home .icon{
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #f2f2f2;
+	box-shadow: 2px 2px 4px 0px #f2f2f2;
+	border-radius: 4px;
+	color: #857043;
+	padding: 10px;
+}
+#home .icon .material-icons{
+	font-size: 45px;
+	display: block;
+	text-align: center;
+}
+
+
+
