@@ -88,3 +88,31 @@ p,h4,h5{
 
 
 
+.list-movies .item-media img{
+	width: 120px;
+}
+.list-movies .item-subtitle{
+	color: #bbb;
+}
+.list-movies .item-text{
+	margin-top: 10px;
+	color: #bbb !important;
+	font-size: 12px !important;
+}
+.list-movies .time{
+	background-color: #FB9E50;
+	padding: 2px 5px;
+	border-radius: 8px;
+	font-size: 10px;
+	color: #fff;
+}
+.list-movies .icono{
+	color:#bbb;
+	text-align: right;
+}
+
+.card.card-movies img{
+	width: 120px;
+	padding: 5px 10px;
+	box-shadow: 
+}
